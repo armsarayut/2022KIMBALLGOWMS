@@ -51,7 +51,7 @@ namespace GoWMS.Server.Data
             _PortString = root.GetSection("DBHost").GetSection("Port").Value;
             _Dbname = root.GetSection("DBHost").GetSection("Name").Value;
 
-            bool bLocal = false;
+            bool bLocal = true;
 
             if (bLocal)
             {
